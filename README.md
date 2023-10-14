@@ -1,4 +1,4 @@
-![iNaturaliTS](https://raw.githubusercontent.com/PencilFoxStudios/iNaturaliTS/9fa4363676133ed6288355a93ae2bc5e3aabf49b/iNaturaliTSLogo.png)
+![iNaturaliTS](https://github.com/PencilFoxStudios/iNaturaliTS/blob/main/iNaturaliTSLogo.png?raw=true)
 > A very-new TypeScript module for interacting the the iNaturalist.org API.🌿
 
 # Introduction
