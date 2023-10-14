@@ -27,7 +27,7 @@ export class iNatClient {
      * This also excludes any unannotated "Alive or Dead" observations. Please note that turning this off may expose more graphic observations that certain audiences
      * may find upsetting, such as corpses, feces, or bones.
      */
-    constructor(safeMode:boolean = true) {
+    constructor(safeMode:boolean = false) {
         this.safeMode = safeMode;
         axios.interceptors.response.use(function (response) {
             // Any status code that lie within the range of 2xx cause this function to trigger
