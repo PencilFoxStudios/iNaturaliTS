@@ -1,0 +1,33 @@
+{
+  "name": "inaturalits",
+  "version": "1.0.0",
+  "description": "A typescript module for interacting the the iNaturalist.org API.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+   ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PencilFoxStudios/iNaturaliTS.git"
+  },
+  "author": "Pencil Fox Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PencilFoxStudios/iNaturaliTS/issues"
+  },
+  "homepage": "https://github.com/PencilFoxStudios/iNaturaliTS#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.1"
+  }
+}
