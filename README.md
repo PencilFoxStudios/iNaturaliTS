@@ -6,3 +6,6 @@ I am a full-time college student who took interest with iNaturalist.org's concep
 
 ## ⭐ Contributing
 I am pretty new to pull requests and open-source collaboration. If you want to implement more of the iNaturalist.org API, please feel free to send a pull request. Like I said above, I am a full time college student, so please be patient with me when waiting for an approval.
+
+## 📚 Acknowledgements
+This project is not affiliated with iNaturalist.org. The original iNaturalist logo is property of the iNaturalist non-profit organization.
