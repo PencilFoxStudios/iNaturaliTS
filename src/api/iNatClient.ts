@@ -6,6 +6,7 @@ import { Observations } from "./Observations";
 import { Photos } from "./Photos";
 import { Taxa } from "./Taxa";
 import { APIResponse } from "../types";
+import { iNatError } from "../types/APIResponse/Error";
 
 /**
  * ### iNatClient
@@ -35,7 +36,7 @@ export class iNatClient {
             return response;
           }, function (error:APIResponse.Error) {
             // Any status codes that falls outside the range of 2xx cause this function to trigger
-            throw new Error(`[iNaturaliTS] The iNaturalist.org API returned error code ${error.code}: \n${error.message}`)
+            throw new iNatError(error.code, error.message)
           });
         this.Observations = Observations(this.httpClient, this.safeMode)
     }
