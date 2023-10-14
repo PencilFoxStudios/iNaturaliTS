@@ -1,6 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 import { ObservationsShowResponse } from "../types/Observations/ObservationsShowResponse";
 import { ObservationQueryParameters } from "../types/QueryParams/ObservationQueryParameters";
+
 /**
  * ### iNatClient
  * A class holding many helpful methods for communicating
@@ -69,8 +70,8 @@ export class iNatClient {
          * @returns A link to the full resolution image.
          */
         GetFullRes: (squareURL: string): string => {
-            return squareURL.replace("square.jpg", "original.jpg")
+            return squareURL.replace("square.jpg", "original.jpg");
         }
-    }
+    };
 
 }
