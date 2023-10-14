@@ -25,6 +25,10 @@ import { API } from "inaturalits";
 //      the iNaturalist API commonly works with.
 const iNaturalist = new API.iNatClient()
 ```
+Note that if you want to enable safe mode, you can just pass ``true`` into the client constructor.
+```ts
+const iNaturalist = new API.iNatClient(true)
+```
 
 ## Observations
 #### Get(id)
@@ -43,8 +47,59 @@ iNaturalist.Observations.Search({
     console.log(result);
 })
 ```
-## Photos
+### ObservationPoller
+> Observes and periodically fetches new observations of specific taxa from iNaturalist.org's API. Also provides subscription and unsubscription mechanisms for managing polling events.
+```ts
+const Poller = new iNaturalist.Observations.ObservationPoller(
+  // Taxa to watch
+  ["42054"], 
+  // Callback for when new observations are detected
+  function (newObservations: ShowObservation[]){
+    console.log(newObservations)
+  }, 
+  // Seconds between checks
+  5 
+);
+
+// Start the polling
+Poller.start();
+
+// End the polling
+Poller.stop();
+```
+## Taxa
+#### Get(id)
+> Returns taxa info behind the given ID.
+```ts
+const ID = "42054";
+const FoxTaxon = await iNaturalist.Taxa.Get(ID);
+if (FoxTaxon) {
+  console.log(`Successfully retrieved ${FoxTaxa.name}!`);
+} else {
+  console.log(`Taxon with ID ${ID} does not appear to exist.`);
+}
+```
 #### Search({...parameters})
+> Searches for taxa through the specified parameters. See [GET /taxa](https://api.inaturalist.org/v1/docs/#!/Taxa/get_taxa) for a complete list.
+```ts
+iNaturalist.Taxa.Search({
+    q: "Vulpes"
+}).then((result:TaxaShowResponse) => {
+    console.log(result);
+})
+```
+#### Autocomplete({...parameters})
+> Attempts to autocomplete from the given partial taxon name, as well as some optional parameters.
+   **Mind the rate limits!**
+```ts
+iNaturalist.Taxa.Autocomplete({
+    q: "Vulp"
+}).then((result:TaxaAutocompleteResponse) => {
+    console.log(result);
+})
+```
+## Photos
+#### GetFullRes(lowResURL)
 > Returns the full resolution version of iNaturalist.org's ``square.jpg`` urls.
 ```ts
 console.log(iNaturalist.Photos.GetFullRes("https://inaturalist-open-data.s3.amazonaws.com/photos/327789050/square.jpg"))
