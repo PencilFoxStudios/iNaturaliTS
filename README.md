@@ -47,6 +47,13 @@ iNaturalist.Observations.Search({
     console.log(result);
 })
 ```
+#### Random(taxonIDs)
+> Fetches a "random" observation from the specified taxa.
+```ts
+console.log((await iNaturalist.Observations.Random(["42054"]))?.uri)
+// Expected Output >>
+// https://www.inaturalist.org/observations/XXXXXXXXX
+```
 ### ObservationPoller
 > Observes and periodically fetches new observations of specific taxa from iNaturalist.org's API. Also provides subscription and unsubscription mechanisms for managing polling events.
 ```ts
