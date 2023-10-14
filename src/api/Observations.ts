@@ -35,11 +35,11 @@ export function Observations(httpClient: AxiosInstance, safeMode:boolean) {
     }
 
     class ObservationPoller {
-        private taxaIDs: string[];
-        private callback: (newObservations: ShowObservation[]) => void;
-        private intervalInSeconds: number;
-        private seenObservations: Set<number>;
-        private intervalId: NodeJS.Timeout | null;
+        public taxaIDs: string[];
+        public callback: (newObservations: ShowObservation[]) => void;
+        public intervalInSeconds: number;
+        public seenObservations: Set<number>;
+        public intervalId: NodeJS.Timeout | null;
         /**
          * Initializes a new observation poller for the specified taxa.
          *
