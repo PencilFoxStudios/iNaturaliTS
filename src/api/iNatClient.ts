@@ -27,7 +27,7 @@ export class iNatClient {
          * @param id - The ID associated with the observation.
          * @returns The resulting observation, if any.
          */
-        Get: async (id: number): Promise<ObservationsShowResponse> => {
+        Get: async (id: string): Promise<ObservationsShowResponse> => {
             try {
                 const response = await this.httpClient.get(`/observations/${id}`);
                 return response.data;

@@ -6,4 +6,4 @@ export interface Comment {
     created_at?: string;
     created_at_details?: DateDetails;
     user?: User;
-  }
+}

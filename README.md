@@ -30,14 +30,14 @@ const iNaturalist = new API.iNatClient()
 #### Get(id)
 > Returns observation info behind the given ID.
 ```ts
-iNaturalist.Observations.Get(187447390).then(function (observationData) {
+iNaturalist.Observations.Get("187447390").then(function (observationData) {
   console.log(observationData)
 })
 ```
 #### Search({...parameters})
 > Searches for observations made under the given parameters. See [GET /observations](https://api.inaturalist.org/v1/docs/#!/Observations/get_observations) for a complete list.
 ```ts
-client.Observations.Search({
+iNaturalist.Observations.Search({
     taxon_id: ["42054"]
 }).then((result:ObservationsShowResponse) => {
     console.log(result);
@@ -47,7 +47,7 @@ client.Observations.Search({
 #### Search({...parameters})
 > Returns the full resolution version of iNaturalist.org's ``square.jpg`` urls.
 ```ts
-console.log(client.Photos.GetFullRes("https://inaturalist-open-data.s3.amazonaws.com/photos/327789050/square.jpg"))
+console.log(iNaturalist.Photos.GetFullRes("https://inaturalist-open-data.s3.amazonaws.com/photos/327789050/square.jpg"))
 // Expected Output >>
 // https://inaturalist-open-data.s3.amazonaws.com/photos/327789050/original.jpg
 ```
