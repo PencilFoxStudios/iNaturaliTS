@@ -19,22 +19,22 @@ npm install inaturalits
 ```
 Then, you can simply import it at the top of your file like so!
 ```ts
-import { API } from "inaturalits";
+import { iNatClient } from "inaturalits";
 // import { Types } from "inaturalits";
 //      This is if you want to fool around with the different types that
 //      the iNaturalist API commonly works with.
-const iNaturalist = new API.iNatClient()
+const iNaturalist = new iNatClient()
 ```
 Note that if you want to enable safe mode, you can just pass ``true`` into the client constructor.
 ```ts
-const iNaturalist = new API.iNatClient(true)
+const iNaturalist = new iNatClient(true)
 ```
 
 ## Observations
 #### Get(id)
 > Returns observation info behind the given ID.
 ```ts
-iNaturalist.Observations.Get("187447390").then(function (observationData) {
+iNaturalist.Observations.Get("187447390").then(function (observationData:Types.Observations.ShowObservation|null) {
   console.log(observationData)
 })
 ```
