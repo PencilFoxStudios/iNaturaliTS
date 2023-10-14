@@ -232,6 +232,8 @@ export interface ObservationQueryParameters {
 
     /**
      * Must have an annotation using this controlled term ID
+     * 
+     * **THIS IS OVERRIDDEN BY SAFE MODE**
      * @query number[]
      */
     term_id?: number[];
@@ -250,6 +252,8 @@ export interface ObservationQueryParameters {
 
     /**
      * Exclude observations with annotations using this controlled value ID. Must be combined with the term_id parameter
+     * 
+     * **THIS IS OVERRIDDEN BY SAFE MODE**
      * @query number[]
      */
     without_term_value_id?: number[];
