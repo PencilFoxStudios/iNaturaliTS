@@ -112,7 +112,7 @@ export function Observations(httpClient: AxiosInstance, safeMode:boolean) {
         */
         Get: async (id: string): Promise<ShowObservation|null> => {
             try {
-                const response = await httpClient.get(`/observation/${id}`);
+                const response = await httpClient.get(`/observations/${id}`);
                 if(response.data.results.length == 1){
                     return response.data.results[0];
                 }
