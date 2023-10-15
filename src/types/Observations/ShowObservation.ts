@@ -7,7 +7,7 @@ import { ObservationTaxon } from "./ObservationTaxon";
 import { Photo } from "./Photo";
 import { PointGeoJson } from "./PointGeoJson";
 import { Sound } from "./Sound";
-import { User } from "./User";
+import { User } from "../Users";
 import { Comment } from "./Comment"
 export interface ShowObservation {
     id?: number;

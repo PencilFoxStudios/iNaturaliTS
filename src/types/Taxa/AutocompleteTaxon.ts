@@ -1,15 +1,4 @@
-import { TaxonPhoto } from "./TaxonPhoto";
-
-export interface AutocompleteTaxon {
-    id?: number;
-    iconic_taxon_id?: number;
-    iconic_taxon_name?: string;
-    is_active?: boolean;
-    name?: string;
-    preferred_common_name?: string;
-    rank?: string;
-    rank_level?: number;
-    default_photo?: TaxonPhoto;
+import { GenericTaxon } from "./GenericTaxon";
+export interface AutocompleteTaxon extends GenericTaxon {
     matched_term?: string;
-    observations_count?: number;
-  }
+}

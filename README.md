@@ -1,9 +1,10 @@
 ![iNaturaliTS](https://github.com/PencilFoxStudios/iNaturaliTS/blob/main/iNaturaliTSLogo.png?raw=true)
 > A very-new TypeScript module for interacting the the iNaturalist.org API.🌿
 
+[![NPM Version](https://img.shields.io/npm/v/inaturalits.svg)](https://www.npmjs.com/package/inaturalits)
 # Introduction
 ### 🗒️ Purpose
-I am a full-time software engineering college student who took interest with iNaturalist.org's concept, and wanted to tinker around more with its API. This is why I am making this package.
+I am a full-time software engineering college student who took interest with iNaturalist.org's concept, and wanted to tinker around more with its API. This is why I am making this package to make things a little bit easier.
 
 ### ⭐ Contributing
 I am pretty new to pull requests and open-source collaboration. If you want to implement more of the iNaturalist.org API, please feel free to send a pull request. Like I said above, I am a full time college student, so please be patient with me when waiting for an approval.

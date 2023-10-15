@@ -1,5 +1,5 @@
 import { DateDetails } from "./DateDetails";
-import { User } from "./User";
+import { User } from "../Users";
 
 export interface Comment {
     id?: number;

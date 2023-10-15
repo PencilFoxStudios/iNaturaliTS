@@ -1,4 +1,4 @@
-import { User } from "./User";
+import { User } from "../Users";
 
 export interface Fave {
     id?: number;

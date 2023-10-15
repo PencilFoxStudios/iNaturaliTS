@@ -1,8 +1,6 @@
 import { AutocompleteTaxon } from "./AutocompleteTaxon";
+import { TaxaShowResponse } from "./TaxaShowResponse";
 
-export interface TaxaAutocompleteResponse {
-    total_results?: number;
-    page?: number;
-    per_page?: number;
-    results?: AutocompleteTaxon[];
+export interface TaxaAutocompleteResponse extends TaxaShowResponse {
+    
 }

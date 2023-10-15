@@ -1,8 +1,9 @@
+import { GenericSearchResponse } from "../APIResponse/GenericSearchResponse";
 import { ShowTaxon } from "./ShowTaxon";
 
-export interface TaxaShowResponse {
-    total_results?: number;
-    page?: number;
-    per_page?: number;
-    results: ShowTaxon[];
-  }
+export interface TaxaShowResponse extends GenericSearchResponse {
+  /**
+   * An array of taxa.
+   */
+  results: ShowTaxon[];
+}
