@@ -2,6 +2,8 @@
 > A very-new TypeScript module for interacting the the iNaturalist.org API.🌿
 
 [![NPM Version](https://img.shields.io/npm/v/inaturalits.svg)](https://www.npmjs.com/package/inaturalits)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/PencilFoxStudios/inaturaliTS/build.yml)
+![Hotel? Trivago.](https://img.shields.io/badge/Hotel%3F-Trivago.-blue)
 # Introduction
 ### 🗒️ Purpose
 I am a full-time software engineering college student who took interest with iNaturalist.org's concept, and wanted to tinker around more with its API. This is why I am making this package to make things a little bit easier.
