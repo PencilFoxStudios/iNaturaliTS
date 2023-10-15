@@ -1,5 +1,5 @@
 ![iNaturaliTS](https://github.com/PencilFoxStudios/iNaturaliTS/blob/main/iNaturaliTSLogo.png?raw=true)
-> A very-new TypeScript module for interacting the the iNaturalist.org API.🌿
+> A TypeScript module for interacting the the iNaturalist.org API.🌿
 
 [![NPM Version](https://img.shields.io/npm/v/inaturalits.svg)](https://www.npmjs.com/package/inaturalits)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/PencilFoxStudios/inaturaliTS/build.yml)
