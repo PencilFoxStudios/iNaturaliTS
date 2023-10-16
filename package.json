@@ -1,6 +1,7 @@
 {
   "name": "inaturalits",
-  "version": "1.1.3",
+  "keywords": ["iNaturalist", "TypeScript", "API Wrapper"],
+  "version": "1.1.8",
   "description": "A typescript module for interacting the the iNaturalist.org API.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,7 +11,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "publish": "npm publish --tag inaturalist",
+    "nightlypublish": "npm publish --tag nightly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
