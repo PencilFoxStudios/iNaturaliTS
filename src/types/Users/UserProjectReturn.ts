@@ -1,9 +1,10 @@
+import { ProjectType } from "../Projects";
 import { ProjectAdmin } from "../Projects/Members";
 
 /**
  * Represents the response data for a user's projects.
  */
-export interface UserProjectsReturn {
+export interface UserProjectReturn {
     /**
      * The unique ID of the project.
      */
@@ -32,7 +33,7 @@ export interface UserProjectsReturn {
     /**
      * The type of the project (e.g., "collection").
      */
-    project_type: string;
+    project_type: ProjectType;
 
     /**
      * The banner color of the project.

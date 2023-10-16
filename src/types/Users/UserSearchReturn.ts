@@ -7,7 +7,7 @@ export interface UserSearchReturn extends User {
     login_autocomplete: string;
     login_exact: string;
     name_autocomplete: string;
-    orcid: string | null;
+    orcid?: string;
     observations_count: number;
     identifications_count: number;
     journal_posts_count: number;
